@@ -51,7 +51,7 @@ def main():
             
 
 
-    # implement input form keyboard and from files
+    # implement input form keyboard and from file
     
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
