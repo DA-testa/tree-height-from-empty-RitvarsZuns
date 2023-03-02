@@ -24,10 +24,10 @@ def compute_height(n, parents):
 
 def main():
     while True:
-        mode = input("Enter input mode (I for console input, F for file input): ")
+        mode = input()
         if mode.lower() == "i":
-            n = int(input("Enter number of nodes: "))
-            parents = list(map(int, input("Enter parents of nodes: ").split()))
+            n = int(input())
+            parents = list(map(int, input().split()))
             break
         elif mode.lower() == "f":
             while True:
