@@ -44,8 +44,8 @@ def main():
                 except ValueError as e:
                     print(str(e))
             break
-        else:
-            print("Invalid input mode. Please enter I or F.")
+        #else:
+            #print("Invalid input mode. Please enter I or F.")
 
     print(compute_height(n, parents))
             
