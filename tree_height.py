@@ -27,22 +27,13 @@ def main():
     if "I" in mode:
         n = int(input())
         parents = list(map(int, input().split()))
-    elif mode.lower() == "f":
-        while True:
-            try:
-                filename = input("Enter file name (without 'a' in the name): ")
-                if 'a' in filename:
-                    raise ValueError("File name cannot contain 'a'")
-                with open(f"./{filename}", "r") as f:
-                    n = int(f.readline().strip())
-                    parents = list(map(int, f.readline().strip().split()))
-                break
-            except FileNotFoundError:
-                print("File not found. Please try again.")
-            except ValueError as e:
-                print(str(e))
-        #else:
-            #print("Invalid input mode. Please enter I or F.")
+    elif "F" in mode:
+        filename = input()
+        if 'a' in filename:
+            raise ValueError()
+        with open(f"test/{filename}") as f:
+            n = int(f.readline().strip())
+            parents = list(map(int, f.readline().strip().split()))
 
     print(compute_height(n, parents))
             
