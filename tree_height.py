@@ -30,7 +30,7 @@ def main():
     elif "F" in mode:
         filename = input()
         if 'a' in filename:
-            raise ValueError()
+            return
         with open(f"test/{filename}") as f:
             n = int(f.readline().strip())
             parents = list(map(int, f.readline().strip().split()))
