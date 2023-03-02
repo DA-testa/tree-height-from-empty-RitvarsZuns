@@ -24,7 +24,7 @@ def compute_height(n, parents):
 
 def main():
     mode = input()
-    if mode.lower() == "i":
+    if "I" in mode:
         n = int(input())
         parents = list(map(int, input().split()))
     elif mode.lower() == "f":
